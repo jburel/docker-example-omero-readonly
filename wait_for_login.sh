@@ -15,7 +15,7 @@ while ! docker-compose exec -T omeroserver $OMERO login -C -s localhost -u "$OME
         exit 1
     fi
     echo "$(date) - waiting for OMERO.server..."
-    sleep 5
+    sleep 10
 done
 echo "OMERO.server connection established"
 
